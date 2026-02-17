@@ -433,51 +433,84 @@ h4,
 
 @media (max-width: 768px) {
     .container {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        text-align: center;
-        /* Center text by default on mobile */
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+        text-align: center !important;
+        /* Force center text */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Force center alignment of children */
     }
 
     .md\:text-left {
         text-align: center !important;
-        /* Force center alignment on mobile overrides */
     }
 
     .bottom-nav {
-        padding: 0.75rem 1rem;
-        /* Add side padding to prevent edge touching */
+        padding: 0.75rem 1rem !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        z-index: 9999 !important;
     }
 
     .bottom-nav-container {
-        justify-content: space-between;
-        /* Better distribution */
-        padding: 0 1rem;
+        justify-content: space-between !important;
+        padding: 0 0.5rem !important;
+        width: 100% !important;
+        display: flex !important;
     }
 
     .bottom-nav-link {
-        font-size: 0.6rem;
-        padding: 0.25rem;
-        min-width: 3.5rem;
-        /* Ensure touch target size */
+        font-size: 0.6rem !important;
+        padding: 0.25rem !important;
+        min-width: 3.5rem !important;
+        flex: 1;
+        /* Distribute space evenly */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
     }
 
     /* Hero Specifics for Mobile */
-    #home .flex-wrap {
-        justify-content: center;
-        /* Center buttons */
-        gap: 1rem;
+    #home {
+        padding-top: 1rem !important;
+        /* Reduce top padding on mobile */
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+    #home .flex-wrap,
+    #home .flex-col {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 1rem !important;
+        width: 100% !important;
     }
 
     .main-title {
-        margin-top: 1rem;
-        /* Space between badge and name */
-        margin-bottom: 1rem;
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+        text-align: center !important;
     }
 
     .hero-subtitle {
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
+    }
+
+    /* Button styles for mobile */
+    .btn {
+        width: 100% !important;
+        /* Full width buttons on mobile */
+        justify-content: center !important;
+        margin: 0 !important;
+        display: flex !important;
     }
 
     /* Contact Cards */
@@ -486,23 +519,25 @@ h4,
     }
 
     .contact-card {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-        padding: 1.5rem;
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 1rem !important;
+        padding: 1.5rem !important;
+        display: flex !important;
+        align-items: center !important;
     }
 
     .contact-icon {
-        margin: 0 auto;
+        margin: 0 auto !important;
     }
 
     .contact-card .text-left {
-        text-align: center;
+        text-align: center !important;
+        width: 100% !important;
     }
 
     .contact-arrow {
-        display: none;
-        /* Hide arrow on mobile to clean up UI */
+        display: none !important;
     }
 }
 
