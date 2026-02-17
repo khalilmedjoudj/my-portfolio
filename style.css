@@ -435,20 +435,74 @@ h4,
     .container {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+        text-align: center;
+        /* Center text by default on mobile */
+    }
+
+    .md\:text-left {
+        text-align: center !important;
+        /* Force center alignment on mobile overrides */
     }
 
     .bottom-nav {
-        padding: 0.75rem 0;
+        padding: 0.75rem 1rem;
+        /* Add side padding to prevent edge touching */
+    }
+
+    .bottom-nav-container {
+        justify-content: space-between;
+        /* Better distribution */
+        padding: 0 1rem;
     }
 
     .bottom-nav-link {
         font-size: 0.6rem;
         padding: 0.25rem;
+        min-width: 3.5rem;
+        /* Ensure touch target size */
     }
 
-    .bottom-nav-link i {
-        width: 18px;
-        height: 18px;
+    /* Hero Specifics for Mobile */
+    #home .flex-wrap {
+        justify-content: center;
+        /* Center buttons */
+        gap: 1rem;
+    }
+
+    .main-title {
+        margin-top: 1rem;
+        /* Space between badge and name */
+        margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Contact Cards */
+    .gold-glow {
+        text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+    }
+
+    .contact-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+
+    .contact-icon {
+        margin: 0 auto;
+    }
+
+    .contact-card .text-left {
+        text-align: center;
+    }
+
+    .contact-arrow {
+        display: none;
+        /* Hide arrow on mobile to clean up UI */
     }
 }
 
