@@ -13,13 +13,6 @@
         .gold-glow {
             text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
         }
-
-        .divider {
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--primary), transparent);
-            opacity: 0.3;
-            margin: 4rem 0;
-        }
     </style>
 </head>
 
@@ -341,55 +334,6 @@
 
     <script>
         lucide.createIcons();
-
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            const nav = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        });
-
-        // Mobile Menu Toggle
-        const menuBtn = document.getElementById('menu-btn');
-        const navLinks = document.querySelector('.md\\:flex'); // Selector for desktop links
-
-        // Create a mobile menu overlay if it doesn't exist
-        menuBtn.addEventListener('click', () => {
-            const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
-            menuBtn.setAttribute('aria-expanded', !isExpanded);
-
-            // Simple mobile menu logic: clone the nav links for a mobile overlay
-            let mobileMenu = document.getElementById('mobile-menu');
-            if (!mobileMenu) {
-                mobileMenu = document.createElement('div');
-                mobileMenu.id = 'mobile-menu';
-                mobileMenu.className = 'fixed inset-0 bg-black z-40 flex flex-col items-center justify-center gap-8 text-2xl font-bold transition-all duration-300 transform translate-x-full';
-                mobileMenu.innerHTML = `
-                    <a href="#specializations" class="nav-link">SKILLS</a>
-                    <a href="#portfolio" class="nav-link">PROJECTS</a>
-                    <a href="#contact" class="btn btn-primary">CONTACT</a>
-                    <button id="close-menu" class="absolute top-8 right-8 text-white"><i data-lucide="x"></i></button>
-                `;
-                document.body.appendChild(mobileMenu);
-                lucide.createIcons();
-
-                document.getElementById('close-menu').addEventListener('click', () => {
-                    mobileMenu.classList.add('translate-x-full');
-                });
-
-                // Close menu when link is clicked
-                mobileMenu.querySelectorAll('a').forEach(link => {
-                    link.addEventListener('click', () => {
-                        mobileMenu.classList.add('translate-x-full');
-                    });
-                });
-            }
-
-            mobileMenu.classList.toggle('translate-x-full');
-        });
     </script>
 </body>
 
