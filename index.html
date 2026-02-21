@@ -4,319 +4,435 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Khalil | Backend Architect & Automation Specialist</title>
+    <title>Khalil Medjoudj | Full-Stack Developer & Automation Expert</title>
+    <meta name="description"
+        content="Full-stack developer specializing in frontend, backend, automation bots, desktop apps, and hosting solutions. Building high-quality software that works.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=5">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        .gold-glow {
-            text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
-        }
-    </style>
 </head>
 
 <body>
     <main>
-        <!-- Hero Section -->
-        <section id="home" class="relative min-h-screen flex items-center pt-10 overflow-hidden">
-            <div class="bg-glow-1"></div>
-            <div class="bg-glow-2"></div>
-            <div class="container relative z-10 px-6">
-                <div class="max-w-3xl mx-auto text-center md:text-left md:mx-0">
-                    <div class="mb-8 fade-in">
-                        <span class="badge">Professional Developer</span>
+        <!-- ============ HERO ============ -->
+        <section id="home">
+            <div class="glow-orb glow-orb-1"></div>
+            <div class="glow-orb glow-orb-2"></div>
+
+            <div class="container">
+                <div class="hero-content">
+                    <div class="fade-in">
+                        <span class="hero-badge">
+                            <span class="pulse"></span>
+                            Available for Projects
+                        </span>
                     </div>
-                    <h1 class="main-title gold-glow">
-                        Khalil <span class="text-gradient">Medjoudj</span>
+                    <h1 class="hero-name fade-in fd1">
+                        Khalil<br><span class="text-gradient">Medjoudj</span>
                     </h1>
-                    <p class="hero-subtitle mx-auto md:mx-0 text-lg md:text-xl opacity-80 leading-relaxed max-w-2xl">
-                        I build powerful systems and easy websites. I specialize in backend tools and simple, clean
-                        designs that help your business.
+                    <p class="hero-tagline fade-in fd2">
+                        Full-Stack Developer & Automation Architect
                     </p>
-                    <div
-                        class="flex flex-col md:flex-row justify-center md:justify-start gap-4 mt-10 w-full md:w-auto px-4 md:px-0">
-                        <a href="#portfolio" class="btn btn-primary w-full md:w-auto justify-center">
-                            See My Projects
+                    <p class="hero-subtitle fade-in fd2">
+                        I design and build complete digital solutions — from polished frontends and robust backends
+                        to bots, automation systems, and desktop software.
+                    </p>
+                    <div class="hero-buttons fade-in fd3">
+                        <a href="#services" class="btn btn-gold">
+                            <i data-lucide="layers"></i>
+                            View Services
                         </a>
-                        <a href="https://t.me/khalil_medjoudj" class="btn btn-outline w-full md:w-auto justify-center">
-                            Message Me
+                        <a href="https://t.me/khalil_medjoudj" class="btn btn-outline">
+                            <i data-lucide="message-circle"></i>
+                            Start a Project
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Arsenal Section -->
-        <section id="specializations" class="section-padding bg-darker">
-            <div class="container px-6">
-                <div class="mb-16 text-center md:text-left">
-                    <h2 class="section-title">What I <span class="text-gradient">Do Best</span></h2>
-                    <p class="section-desc">Practical solutions for your digital needs.</p>
-                </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="glass-card p-8">
-                        <div class="skill-icon"><i data-lucide="server"></i></div>
-                        <h3 class="card-title text-xl">Website Backend</h3>
-                        <p class="card-desc">I build the "brain" of your website. I make sure everything is fast, safe,
-                            and works perfectly behind the scenes.</p>
+        <hr class="gold-line">
+
+        <!-- ============ STATS ============ -->
+        <section class="stats-ribbon">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item reveal">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects Delivered</span>
                     </div>
-                    <div class="glass-card p-8">
-                        <div class="skill-icon"><i data-lucide="layout"></i></div>
-                        <h3 class="card-title text-xl">Frontend Design</h3>
-                        <p class="card-desc">I create simple and beautiful designs for your website that look great on
-                            phones and computers.</p>
+                    <div class="stat-item reveal">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Years Experience</span>
                     </div>
-                    <div class="glass-card p-8">
-                        <div class="skill-icon"><i data-lucide="zap"></i></div>
-                        <h3 class="card-title text-xl">Quick Automation</h3>
-                        <p class="card-desc">I make programs that do boring work for you automatically, so you can focus
-                            on what matters.</p>
+                    <div class="stat-item reveal">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Bots Running</span>
                     </div>
-                    <div class="glass-card p-8">
-                        <div class="skill-icon"><i data-lucide="monitor"></i></div>
-                        <h3 class="card-title text-xl">Desktop Apps</h3>
-                        <p class="card-desc">I build professional applications that run directly on your computer to
-                            help manage your business data.</p>
-                    </div>
-                    <div class="glass-card p-8 text-center md:text-left md:col-span-2 lg:col-span-1">
-                        <div class="skill-icon mx-auto md:mx-0"><i data-lucide="bitcoin"></i></div>
-                        <h3 class="card-title text-xl">Crypto Bots</h3>
-                        <p class="card-desc">I create smart trading robots for Crypto markets that find opportunities
-                            and trade automatically 24/7.</p>
+                    <div class="stat-item reveal">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Client Satisfaction</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Portfolio Gallery -->
+
+        <!-- ============ SERVICES ============ -->
+        <section id="services" class="section-padding">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 3.5rem;">
+                    <span class="section-eyebrow reveal">What I Do</span>
+                    <h2 class="section-title reveal">My <span class="text-gradient">Services</span></h2>
+                    <p class="section-desc reveal" style="margin: 0 auto;">
+                        End-to-end development — from pixel-perfect interfaces to server-side logic and
+                        everything in between.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Frontend -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i data-lucide="palette"></i></div>
+                        <h3 class="service-title">Frontend Development</h3>
+                        <p class="service-desc">Clean, responsive, and modern interfaces built with attention to every
+                            pixel.</p>
+                        <ul class="service-list">
+                            <li>Responsive websites & landing pages</li>
+                            <li>Interactive UI with animations</li>
+                            <li>Mobile-first design</li>
+                            <li>Performance optimization</li>
+                        </ul>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i data-lucide="server"></i></div>
+                        <h3 class="service-title">Backend Development</h3>
+                        <p class="service-desc">Solid server-side architecture — APIs, databases, auth, and system
+                            logic.</p>
+                        <ul class="service-list">
+                            <li>REST APIs & microservices</li>
+                            <li>Database design (PostgreSQL, MongoDB)</li>
+                            <li>Authentication & security</li>
+                            <li>Server deployment & hosting</li>
+                        </ul>
+                    </div>
+
+                    <!-- Bots -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i data-lucide="bot"></i></div>
+                        <h3 class="service-title">Bots & Scrapers</h3>
+                        <p class="service-desc">Intelligent bots for Telegram, Discord, trading, and data extraction at
+                            scale.</p>
+                        <ul class="service-list">
+                            <li>Telegram & Discord bots</li>
+                            <li>Trading bots (Forex & Crypto)</li>
+                            <li>Web scraping engines</li>
+                            <li>Account automation tools</li>
+                        </ul>
+                    </div>
+
+                    <!-- Automation -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i data-lucide="workflow"></i></div>
+                        <h3 class="service-title">Automation & n8n</h3>
+                        <p class="service-desc">Eliminate repetitive work with smart workflows that connect your tools
+                            and run 24/7.</p>
+                        <ul class="service-list">
+                            <li>n8n workflow design & deployment</li>
+                            <li>API integrations & webhooks</li>
+                            <li>Email & CRM automation</li>
+                            <li>Data sync between platforms</li>
+                        </ul>
+                    </div>
+
+                    <!-- Desktop Apps -->
+                    <div class="service-card wide reveal">
+                        <div class="service-icon"><i data-lucide="monitor"></i></div>
+                        <h3 class="service-title">Desktop Applications</h3>
+                        <p class="service-desc">Professional desktop software with local databases, networking, and
+                            polished UIs for business management.</p>
+                        <ul class="service-list">
+                            <li>POS & inventory systems</li>
+                            <li>Clinic & office management tools</li>
+                            <li>Dashboard & monitoring apps</li>
+                            <li>LAN-based multi-user systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PROCESS ============ -->
+        <section class="section-padding bg-darker">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 3.5rem;">
+                    <span class="section-eyebrow reveal">Process</span>
+                    <h2 class="section-title reveal">How I <span class="text-gradient">Work</span></h2>
+                    <p class="section-desc reveal" style="margin: 0 auto;">
+                        A structured approach to take your project from concept to production.
+                    </p>
+                </div>
+
+                <div class="process-grid">
+                    <div class="process-step reveal">
+                        <div class="process-number">01</div>
+                        <h3 class="process-title">Discover</h3>
+                        <p class="process-desc">We discuss your needs, define the scope, and map out exactly what
+                            success looks like.</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="process-number">02</div>
+                        <h3 class="process-title">Build</h3>
+                        <p class="process-desc">I develop the solution with clean code, regular updates, and iterative
+                            feedback.</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="process-number">03</div>
+                        <h3 class="process-title">Deliver</h3>
+                        <p class="process-desc">Launch on reliable infrastructure with documentation and ongoing
+                            support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="gold-line">
+
+        <!-- ============ PROJECTS ============ -->
         <section id="portfolio" class="section-padding">
-            <div class="container px-6">
-                <div class="text-center md:text-left mb-16">
-                    <h2 class="section-title">Project <span class="text-gradient">Matrix</span></h2>
-                    <p class="section-desc">A selection of my professional work.</p>
+            <div class="container">
+                <div style="margin-bottom: 3.5rem;">
+                    <span class="section-eyebrow reveal">Portfolio</span>
+                    <h2 class="section-title reveal">Featured <span class="text-gradient">Work</span></h2>
+                    <p class="section-desc reveal">Real projects I've designed, built, and shipped.</p>
                 </div>
 
-                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Project 1 -->
-                    <div class="glass-card overflow-hidden group">
-                        <div class="p-8">
-                            <span
-                                class="text-primary text-xs font-bold uppercase tracking-widest block mb-4">Software</span>
-                            <h3 class="card-title text-xl mb-2">Doctor Cabinet</h3>
-                            <p class="card-desc text-sm">A smart system for medical clinics that works on a local
-                                network to manage patient files safely.</p>
+                <div class="projects-grid">
+                    <div class="project-card reveal">
+                        <div class="project-cat"><span class="dot"></span>Trading Bot</div>
+                        <h3 class="project-title">MetaTrader AI Engine</h3>
+                        <p class="project-desc">Algorithmic trading bot with multi-timeframe analysis, signal scoring,
+                            and 24/7 automated risk management.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">MT5 API</span>
+                            <span class="tag">TA-Lib</span>
                         </div>
                     </div>
 
-                    <!-- Project 2 -->
-                    <div class="glass-card overflow-hidden group">
-                        <div class="p-8">
-                            <span
-                                class="text-primary text-xs font-bold uppercase tracking-widest block mb-4">Design</span>
-                            <h3 class="card-title text-xl mb-2">Landing Page</h3>
-                            <p class="card-desc text-sm">A modern, fast-loading landing page designed to turn visitors
-                                into customers.</p>
+                    <div class="project-card reveal">
+                        <div class="project-cat"><span class="dot"></span>AI Bot</div>
+                        <h3 class="project-title">AI Secretary</h3>
+                        <p class="project-desc">Intelligent Telegram assistant powered by LLMs that handles
+                            conversations, answers questions, and manages tasks automatically.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Ollama</span>
+                            <span class="tag">Telegram API</span>
                         </div>
                     </div>
 
-                    <!-- Project 3 -->
-                    <div class="glass-card overflow-hidden group">
-                        <div class="p-8">
-                            <span class="text-primary text-xs font-bold uppercase tracking-widest block mb-4">Trading
-                                Bot</span>
-                            <h3 class="card-title text-xl mb-2">MetaTrader AI</h3>
-                            <p class="card-desc text-sm">A smart program that manages trades automatically using
-                                advanced math.</p>
+                    <div class="project-card reveal">
+                        <div class="project-cat"><span class="dot"></span>Automation</div>
+                        <h3 class="project-title">n8n Business Hub</h3>
+                        <p class="project-desc">Complete n8n workflow system automating lead capture, CRM updates,
+                            invoicing, and client notifications.</p>
+                        <div class="project-tags">
+                            <span class="tag">n8n</span>
+                            <span class="tag">Webhooks</span>
+                            <span class="tag">API</span>
                         </div>
                     </div>
 
-                    <!-- Project 4 -->
-                    <div class="glass-card overflow-hidden group">
-                        <div class="p-8">
-                            <span
-                                class="text-primary text-xs font-bold uppercase tracking-widest block mb-4">Website</span>
-                            <h3 class="card-title text-xl mb-2">Baraka Food</h3>
-                            <p class="card-desc text-sm">A community website built to help people share and find
-                                resources easily.</p>
+                    <div class="project-card reveal">
+                        <div class="project-cat"><span class="dot"></span>Frontend</div>
+                        <h3 class="project-title">Landing Pages</h3>
+                        <p class="project-desc">High-conversion responsive landing pages with modern design, smooth
+                            animations, and optimized performance.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
                         </div>
                     </div>
 
-                    <!-- Project 5 -->
-                    <div class="glass-card overflow-hidden group">
-                        <div class="p-8">
-                            <span
-                                class="text-primary text-xs font-bold uppercase tracking-widest block mb-4">Software</span>
-                            <h3 class="card-title text-xl mb-2">Shop POS</h3>
-                            <p class="card-desc text-sm">A tool for shops to handle orders, stock, and sales in one
-                                place.</p>
+                    <div class="project-card reveal">
+                        <div class="project-cat"><span class="dot"></span>Desktop App</div>
+                        <h3 class="project-title">Clinic Management</h3>
+                        <p class="project-desc">LAN-based desktop app for medical clinics — patient records,
+                            appointments, and secure data handling.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">Tkinter</span>
                         </div>
                     </div>
 
-                    <!-- Project 6 -->
-                    <div class="glass-card overflow-hidden group">
-                        <div class="p-8">
-                            <span
-                                class="text-primary text-xs font-bold uppercase tracking-widest block mb-4">Automation</span>
-                            <h3 class="card-title text-xl mb-2">Account Bot</h3>
-                            <p class="card-desc text-sm">A tool that creates many accounts automatically to save you
-                                time.</p>
+                    <div class="project-card reveal">
+                        <div class="project-cat"><span class="dot"></span>Crypto</div>
+                        <h3 class="project-title">Arbitrage Bot</h3>
+                        <p class="project-desc">Cross-exchange crypto arbitrage system detecting price gaps and
+                            executing trades in milliseconds.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">CCXT</span>
+                            <span class="tag">AsyncIO</span>
                         </div>
                     </div>
 
-                    <!-- Project 7 -->
-                    <div class="glass-card overflow-hidden group">
-                        <div class="p-8">
-                            <span class="text-primary text-xs font-bold uppercase tracking-widest block mb-4">Custom
-                                Script</span>
-                            <h3 class="card-title text-xl mb-2">Data Scraper</h3>
-                            <p class="card-desc text-sm">I build scripts that gather information from any website
-                                quickly.</p>
+                    <div class="project-card reveal">
+                        <div class="project-cat"><span class="dot"></span>Web App</div>
+                        <h3 class="project-title">Baraka Food Platform</h3>
+                        <p class="project-desc">Community resource-sharing platform with user auth, search, and
+                            real-time updates.</p>
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">MongoDB</span>
                         </div>
                     </div>
 
-                    <!-- Project 8 -->
-                    <div class="glass-card overflow-hidden group">
-                        <div class="p-8">
-                            <span
-                                class="text-primary text-xs font-bold uppercase tracking-widest block mb-4">Crypto</span>
-                            <h3 class="card-title text-xl mb-2">Arbitrage Bot</h3>
-                            <p class="card-desc text-sm">A trading robot that finds price differences between exchanges
-                                and trades fast.</p>
+                    <div class="project-card reveal">
+                        <div class="project-cat"><span class="dot"></span>Desktop App</div>
+                        <h3 class="project-title">Shop POS System</h3>
+                        <p class="project-desc">Point-of-sale system with inventory tracking, sales analytics, and
+                            receipt generation for retail stores.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Qt</span>
                         </div>
                     </div>
 
-                    <!-- Project 9 -->
-                    <div class="glass-card overflow-hidden group">
-                        <div class="p-8">
-                            <span
-                                class="text-primary text-xs font-bold uppercase tracking-widest block mb-4">Industrial</span>
-                            <h3 class="card-title text-xl mb-2">Control Hub</h3>
-                            <p class="card-desc text-sm">A software system that monitors and controls industrial
-                                machines automatically.</p>
+                    <div class="project-card reveal">
+                        <div class="project-cat"><span class="dot"></span>Automation</div>
+                        <h3 class="project-title">Account Creator</h3>
+                        <p class="project-desc">Automated account creation engine with proxy rotation, CAPTCHA handling,
+                            and batch processing.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Selenium</span>
+                            <span class="tag">Threading</span>
                         </div>
                     </div>
 
-                    <!-- Project 10 -->
-                    <div class="glass-card overflow-hidden group">
-                        <div class="p-8">
-                            <span
-                                class="text-primary text-xs font-bold uppercase tracking-widest block mb-4">Database</span>
-                            <h3 class="card-title text-xl mb-2">Data Pipeline</h3>
-                            <p class="card-desc text-sm">A secure system that moves and organizes large amounts of data
-                                without losing info.</p>
+                    <div class="project-card reveal">
+                        <div class="project-cat"><span class="dot"></span>Scraping</div>
+                        <h3 class="project-title">Data Scraper</h3>
+                        <p class="project-desc">High-performance web scraper with anti-detection, rate limiting, and
+                            structured export to CSV/JSON.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">BeautifulSoup</span>
+                            <span class="tag">Requests</span>
                         </div>
                     </div>
 
-                    <!-- Project 11 -->
-                    <div class="glass-card overflow-hidden group">
-                        <div class="p-8">
-                            <span
-                                class="text-primary text-xs font-bold uppercase tracking-widest block mb-4">Security</span>
-                            <h3 class="card-title text-xl mb-2">Auth Shield</h3>
-                            <p class="card-desc text-sm">A robust login system with two-step verification to keep
-                                company data safe.</p>
+                    <div class="project-card reveal">
+                        <div class="project-cat"><span class="dot"></span>Dashboard</div>
+                        <h3 class="project-title">Live Analytics</h3>
+                        <p class="project-desc">Real-time analytics dashboard with WebSocket feeds, interactive charts,
+                            and KPI monitoring.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Chart.js</span>
+                            <span class="tag">WebSocket</span>
                         </div>
                     </div>
 
-                    <!-- Project 12 -->
-                    <div class="glass-card overflow-hidden group">
-                        <div class="p-8">
-                            <span
-                                class="text-primary text-xs font-bold uppercase tracking-widest block mb-4">Frontend</span>
-                            <h3 class="card-title text-xl mb-2">Live Dashboard</h3>
-                            <p class="card-desc text-sm">A real-time monitor that shows business stats with simple,
-                                beautiful charts.</p>
+                    <div class="project-card reveal">
+                        <div class="project-cat"><span class="dot"></span>Backend</div>
+                        <h3 class="project-title">API Gateway</h3>
+                        <p class="project-desc">Unified API gateway with request routing, authentication middleware,
+                            caching, and rate limiting.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">Redis</span>
                         </div>
                     </div>
 
-                    <!-- Project 13 -->
-                    <div class="glass-card overflow-hidden group">
-                        <div class="p-8">
-                            <span
-                                class="text-primary text-xs font-bold uppercase tracking-widest block mb-4">Integration</span>
-                            <h3 class="card-title text-xl mb-2">API Gateway</h3>
-                            <p class="card-desc text-sm">A bridge that connects different software tools so they can
-                                talk to each other.</p>
+                    <div class="project-card reveal">
+                        <div class="project-cat"><span class="dot"></span>Data</div>
+                        <h3 class="project-title">ETL Pipeline</h3>
+                        <p class="project-desc">Data pipeline that ingests, transforms, and loads large datasets with
+                            validation and error recovery.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Pandas</span>
                         </div>
                     </div>
 
-                    <!-- Project 14 -->
-                    <div class="glass-card overflow-hidden group">
-                        <div class="p-8">
-                            <span
-                                class="text-primary text-xs font-bold uppercase tracking-widest block mb-4">Network</span>
-                            <h3 class="card-title text-xl mb-2">Proxy Manager</h3>
-                            <p class="card-desc text-sm">A smart tool that manages many network connections for safe web
-                                scanning.</p>
+                    <div class="project-card reveal">
+                        <div class="project-cat"><span class="dot"></span>Security</div>
+                        <h3 class="project-title">Auth Shield</h3>
+                        <p class="project-desc">Authentication system with JWT tokens, 2FA, rate limiting, and
+                            role-based access control.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">JWT</span>
+                            <span class="tag">Redis</span>
                         </div>
                     </div>
 
-                    <!-- Project 15 -->
-                    <div class="glass-card overflow-hidden group">
-                        <div class="p-8">
-                            <span class="text-primary text-xs font-bold uppercase tracking-widest block mb-4">AI
-                                Research</span>
-                            <h3 class="card-title text-xl mb-2">Pattern Finder</h3>
-                            <p class="card-desc text-sm">A system that learns from past data to predict future trends in
-                                business.</p>
+                    <div class="project-card reveal">
+                        <div class="project-cat"><span class="dot"></span>Network</div>
+                        <h3 class="project-title">Proxy Manager</h3>
+                        <p class="project-desc">Smart proxy pool manager with health checking, rotation strategies, and
+                            geographic targeting.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">AsyncIO</span>
+                            <span class="tag">aiohttp</span>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section-padding relative bg-darker overflow-hidden">
-            <div class="bg-glow-1 opacity-5"></div>
-            <div class="container relative z-10 px-6">
-                <div class="max-w-4xl mx-auto text-center">
-                    <div class="mb-10">
-                        <h2 class="section-title mb-6">Ready to <span class="text-gradient">Start?</span></h2>
-                        <p class="section-desc mx-auto text-xl opacity-90 leading-relaxed max-w-2xl">
-                            I'm currently taking on new projects. The best way to reach me and get a fast response is
-                            through Telegram or WhatsApp. Click below to start our conversation.
-                        </p>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-                        <a href="https://t.me/khalil_medjoudj" class="contact-card group">
-                            <div class="contact-icon"><i data-lucide="send"></i></div>
-                            <div class="text-left">
-                                <span class="contact-label">TELEGRAM</span>
-                                <span class="contact-value">@khalil_medjoudj</span>
-                            </div>
-                            <i data-lucide="external-link" class="contact-arrow"></i>
-                        </a>
-
-                        <a href="https://wa.me/213791870504" class="contact-card group">
-                            <div class="contact-icon"><i data-lucide="phone"></i></div>
-                            <div class="text-left">
-                                <span class="contact-label">WHATSAPP</span>
-                                <span class="contact-value">+213 7 91870504</span>
-                            </div>
-                            <i data-lucide="external-link" class="contact-arrow"></i>
-                        </a>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- ============ CTA ============ -->
+        <section class="cta-banner">
+            <div class="glow-orb"
+                style="width:400px;height:400px;top:-30%;left:20%;background:var(--gold);opacity:0.04;"></div>
+            <div class="container">
+                <h2 class="cta-title reveal">Ready to Build <span class="text-gradient">Something Great?</span></h2>
+                <p class="cta-desc reveal">
+                    Tell me about your project. I'll map out the right solution and get it done — fast.
+                </p>
+                <div class="cta-buttons reveal">
+                    <a href="https://t.me/khalil_medjoudj" class="btn btn-gold">
+                        <i data-lucide="send"></i>
+                        Message on Telegram
+                    </a>
+                    <a href="https://wa.me/213791870504" class="btn btn-outline">
+                        <i data-lucide="phone"></i>
+                        WhatsApp Me
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
-    <!-- Bottom Navigation -->
+    <!-- Bottom Nav -->
     <nav class="bottom-nav">
         <div class="bottom-nav-container">
             <a href="#home" class="bottom-nav-link">
                 <i data-lucide="home"></i>
                 <span>Home</span>
             </a>
-            <a href="#specializations" class="bottom-nav-link">
-                <i data-lucide="award"></i>
-                <span>Skills</span>
+            <a href="#services" class="bottom-nav-link">
+                <i data-lucide="layers"></i>
+                <span>Services</span>
             </a>
             <a href="#portfolio" class="bottom-nav-link">
-                <i data-lucide="grid"></i>
-                <span>Projects</span>
+                <i data-lucide="briefcase"></i>
+                <span>Work</span>
             </a>
             <a href="#contact" class="bottom-nav-link">
                 <i data-lucide="mail"></i>
@@ -325,16 +441,44 @@
         </div>
     </nav>
 
-    <footer class="footer py-20 bg-black">
-        <div class="container px-6 flex justify-center items-center">
-            <div class="copyright-container">
-                <span class="copyright-text">© 2026 KHALIL MEDJOUDJ. ALL RIGHTS RESERVED.</span>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <span class="copyright">© 2026 Khalil Medjoudj — All rights reserved</span>
+                <div class="footer-links">
+                    <a href="https://github.com/khalilmedjoudj" class="footer-link" title="GitHub">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://t.me/khalil_medjoudj" class="footer-link" title="Telegram">
+                        <i data-lucide="send"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
 
     <script>
         lucide.createIcons();
+
+        // Scroll reveal
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+        // Active nav
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.bottom-nav-link');
+
+        function updateNav() {
+            let cur = '';
+            sections.forEach(s => { if (scrollY >= s.offsetTop - 120) cur = s.id; });
+            navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + cur));
+        }
+
+        addEventListener('scroll', updateNav, { passive: true });
+        updateNav();
     </script>
 </body>
 
